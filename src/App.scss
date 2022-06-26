@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+$desktop: 1200px;
+
+$font-family: 'Overpass', sans-serif;
+
+$orange: hsl(25, 97%, 53%);
+$white: hsl(0, 0%, 100%);
+$light-gray: hsl(217, 12%, 63%);
+$gray: hsl(216, 12%, 54%);
+$blue: hsl(213, 19%, 18%);
+$dark-blue: hsl(216, 12%, 8%);
+$black-gradient: radial-gradient(
+  98.96% 98.96% at 50% 0%,
+  #232a34 0%,
+  #181e27 100%
+);
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+/* set up the body */
+body {
+  font-family: $font-family;
+  font-size: 15px;
+  color: $white;
+  background-color: $dark-blue;
+  min-height: 100vh;
+
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+/* make images easier to work with */
+img,
+picutre {
+  max-width: 100%;
+  display: block;
+}
+
+// tried to put a div around the star icon but not working
+// .img-wrapper {
+//   background-color: $dark-blue;
+//   border-radius: 50%;
+//   aspect-ratio: 1;
+// }
+
+.rating-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-btn {
+  aspect-ratio: 1;
+  display: inline-grid;
+  place-items: center;
+  border: none;
+  background-color: $blue;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  color: $gray;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+
+  &:hover {
+    background-color: $light-gray;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $orange;
+    color: $white;
+  }
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 22.5px;
+  padding: 0.75rem;
+  font: inherit;
+}
+
+.submit-btn {
+  width: 100%;
+  text-transform: uppercase;
+  background-color: $orange;
+  color: $white;
+  font-weight: 700;
+  line-height: 18.99px;
+  letter-spacing: 2px;
+
+  &:active,
+  &:hover {
+    color: $orange;
+    background-color: $white;
+  }
+}
+
+.thank-you-btn {
+  background-color: $dark-blue;
+  color: orange;
+  line-height: 22px;
+  padding: 0.75rem;
+}
+
+.card-wrapper {
+  height: 500px;
+  max-width: 330px;
+
+  @media (min-width: $desktop) {
+    max-width: 415px;
+  }
+}
+
+.star-wrapper {
+  aspect-ratio: 1;
+  background-color: $blue;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: inline-grid;
+  place-items: center;
+
+  .star {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0;
+    margin-top: 0.5px;
+  }
+}
+
+.card {
+  background: $black-gradient;
+  // this is making everything huge??
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 15px;
+  padding: 1rem;
+
+  * {
+    margin-bottom: 1rem;
+  }
+}
+
+.thank-you--card {
+  align-items: center;
+  justify-content: center;
+  height: auto;
+
+  * {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: center;
+  }
+}
+
+.card-title {
+  font-weight: 700;
+  line-height: 35px;
+  font-size: 28px;
+}
+
+.card-text {
+  color: $light-gray;
+  font-size: 14px;
+  line-height: 22px;
+}
