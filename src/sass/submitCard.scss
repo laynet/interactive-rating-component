@@ -1,0 +1,65 @@
+@import '../sass/global.scss';
+
+.star-wrapper {
+  aspect-ratio: 1;
+  background-color: $blue;
+  border: none;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: inline-grid;
+  place-items: center;
+
+  .star {
+    height: 20px;
+    width: 20px;
+    margin-bottom: 0;
+    margin-top: 0.5px;
+  }
+}
+.rating-btn-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating-btn {
+  aspect-ratio: 1;
+  display: inline-grid;
+  place-items: center;
+  border: none;
+  background-color: $blue;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+
+  color: $gray;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 24px;
+
+  &:hover {
+    background-color: $light-gray;
+    color: $white;
+  }
+
+  &:active {
+    background-color: $orange;
+    color: $white;
+  }
+}
+
+.submit-btn {
+  width: 100%;
+  text-transform: uppercase;
+  background-color: $orange;
+  color: $white;
+  font-weight: 700;
+  line-height: 18.99px;
+  letter-spacing: 2px;
+
+  &:active,
+  &:hover {
+    color: $orange;
+    background-color: $white;
+  }
+}

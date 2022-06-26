@@ -1,0 +1,22 @@
+@import '../sass/global.scss';
+
+.thank-you-btn {
+  background-color: $dark-blue;
+  color: orange;
+  line-height: 22px;
+  padding: 0.75rem;
+}
+
+.thank-you--card {
+  align-items: center;
+  justify-content: center;
+  height: auto;
+
+  * {
+    margin-bottom: 2rem;
+  }
+
+  p {
+    text-align: center;
+  }
+}
