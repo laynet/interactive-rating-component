@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend mentor solution](https://www.frontendmentor.io/solutions/interactive-rating-component-using-reactjs-jsx-html-and-sass-Y9MhUYpv-o)
 - Live Site URL: [Deployed with netlify](https://astounding-mousse-0d8d81.netlify.app/)
 
 ## My process
@@ -52,6 +52,6 @@ This was great practice for react, I've been working on much larger projects and
 
 ## Author
 
-- LinkedIn - [Layne Taylor](https://www.your-site.com)
+- LinkedIn - [Layne Taylor](https://www.linkedin.com/in/layne-taylor/)
 - Frontend Mentor - [@laynet](https://www.frontendmentor.io/profile/laynet)
 - Twitter - [@laynerzzzz](https://www.twitter.com/laynerzzzz)
