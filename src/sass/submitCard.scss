@@ -37,15 +37,14 @@
   font-size: 16px;
   line-height: 24px;
 
-  &:hover {
+  &:not(.btn-selected):hover {
     background-color: $light-gray;
     color: $white;
   }
-
-  &:active {
-    background-color: $orange;
-    color: $white;
-  }
+}
+.btn-selected {
+  background-color: $orange;
+  color: $white;
 }
 
 .submit-btn {
