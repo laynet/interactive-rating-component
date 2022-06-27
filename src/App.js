@@ -22,6 +22,7 @@ function App() {
   const submitRating = (e) => {
     setSubmitted(true);
   };
+
   return (
     <>
       {!submitted ? (
@@ -32,7 +33,7 @@ function App() {
           submit={submitRating}
         />
       ) : (
-        <ThankYouCard />
+        <ThankYouCard selected={selected} />
       )}
     </>
   );
